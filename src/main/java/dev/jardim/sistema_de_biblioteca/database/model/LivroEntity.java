@@ -24,5 +24,4 @@ public class LivroEntity {
 
     private Integer quantidade;
 
-
 }

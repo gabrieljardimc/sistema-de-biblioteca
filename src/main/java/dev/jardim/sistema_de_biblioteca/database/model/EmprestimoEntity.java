@@ -32,5 +32,4 @@ public class EmprestimoEntity {
     @JoinColumn(name = "livro_id")
     private LivroEntity livro;
 
-
 }
