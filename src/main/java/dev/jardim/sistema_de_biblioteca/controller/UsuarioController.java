@@ -39,7 +39,8 @@ public class UsuarioController {
 
     @PutMapping("/{usuarioId}")
     @ResponseStatus(HttpStatus.OK)
-    public UsuarioEntity atualizarUsuario(@Valid @PathVariable Long usuarioId, UsuarioDto usuarioDto) throws NotFoundException {
+    public UsuarioEntity atualizarUsuario(@Valid @PathVariable Long usuarioId,
+                                          @Valid @RequestBody UsuarioDto usuarioDto) throws NotFoundException {
         return usuarioService.atualizarUsuario(usuarioId, usuarioDto);
     }
 
