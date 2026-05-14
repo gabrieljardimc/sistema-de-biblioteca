@@ -2,11 +2,9 @@ package dev.jardim.sistema_de_biblioteca.controller;
 
 import dev.jardim.sistema_de_biblioteca.database.model.LivroEntity;
 import dev.jardim.sistema_de_biblioteca.dto.LivroDto;
-import dev.jardim.sistema_de_biblioteca.dto.UsuarioDto;
 import dev.jardim.sistema_de_biblioteca.exception.BadRequestException;
 import dev.jardim.sistema_de_biblioteca.exception.NotFoundException;
 import dev.jardim.sistema_de_biblioteca.service.LivroService;
-import dev.jardim.sistema_de_biblioteca.service.UsuarioService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

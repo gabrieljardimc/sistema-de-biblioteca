@@ -19,9 +19,6 @@ public class EmprestimoDto {
     private LocalDate dataDevolucao;
 
     @NotNull
-    private Boolean devolvido;
-
-    @NotNull
     private Long usuarioId;
 
     @NotNull

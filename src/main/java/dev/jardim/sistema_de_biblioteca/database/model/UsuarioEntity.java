@@ -1,5 +1,6 @@
 package dev.jardim.sistema_de_biblioteca.database.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,5 +26,6 @@ public class UsuarioEntity {
     private String telefone;
 
     @OneToMany(mappedBy = "usuario")
+    @JsonIgnore
     private List<EmprestimoEntity> emprestimos;
 }
